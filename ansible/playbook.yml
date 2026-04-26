@@ -1,0 +1,23 @@
+- name: Local Deployment
+  hosts: local
+  become: false
+
+  tasks:
+    - name: Install Flask
+      pip:
+        name: flask
+
+    - name: Create app directory
+      file:
+        path: /home/priyadarshini/deployed_app
+        state: directory
+
+    - name: Copy app files
+      copy:
+        src: ../app/
+        dest: /home/priyadarshini/deployed_app/
+
+    - name: Run Flask app
+      shell: nohup python3 /home/priyadarshini/deployed_app/app.py &
+      async: 10
+      poll: 0
