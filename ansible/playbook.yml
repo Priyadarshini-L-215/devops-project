@@ -9,15 +9,15 @@
 
     - name: Create app directory
       file:
-        path: /home/priyadarshini/deployed_app
+        path: /tmp/deployed_app
         state: directory
 
     - name: Copy app files
       copy:
         src: ../app/
-        dest: /home/priyadarshini/deployed_app/
+        dest: /tmp/deployed_app/
 
     - name: Run Flask app
-      shell: nohup python3 /home/priyadarshini/deployed_app/app.py &
+      shell: nohup python3 /tmp/deployed_app/app.py &
       async: 10
       poll: 0
