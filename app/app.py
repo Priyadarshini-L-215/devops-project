@@ -9,10 +9,12 @@ def home():
     <html>
     <head>
         <title>DevOps CI/CD Project</title>
+
         <style>
+
             body {
                 font-family: Arial, sans-serif;
-                background-color: #6CDAE7;
+                background-color: #e6f2ff;
                 margin: 0;
                 padding: 0;
             }
@@ -20,51 +22,57 @@ def home():
             .container {
                 width: 80%;
                 margin: 50px auto;
-                background: white;
+                background-color: #ffffff;
                 padding: 40px;
-                border-radius: 10px;
-                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+                border-radius: 12px;
+                box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
             }
 
             h1 {
-                color: #2c3e50;
+                color: #0b3d91;
                 text-align: center;
             }
 
             h2 {
-                color: #34495e;
+                color: #145da0;
                 margin-top: 30px;
             }
 
             p {
-                color: #555;
+                color: #333333;
                 line-height: 1.6;
+                font-size: 17px;
             }
 
             .highlight {
-                color: #2980b9;
+                color: #0077b6;
                 font-weight: bold;
             }
 
             footer {
                 margin-top: 40px;
                 text-align: center;
-                color: gray;
+                color: #666666;
+                font-size: 14px;
             }
+
         </style>
     </head>
 
     <body>
 
         <div class="container">
+
             <h1>DevOps CI/CD Automation Project</h1>
 
             <p>
-                This project demonstrates a complete <span class="highlight">CI/CD pipeline</span>
+                This project demonstrates a complete
+                <span class="highlight">CI/CD pipeline</span>
                 using Flask, GitHub, CircleCI, and Ansible.
             </p>
 
             <h2>What is CircleCI?</h2>
+
             <p>
                 CircleCI is a cloud-based Continuous Integration and Continuous Deployment (CI/CD)
                 platform that automatically builds, tests, and deploys applications whenever code
@@ -72,21 +80,26 @@ def home():
             </p>
 
             <h2>What is Ansible?</h2>
+
             <p>
                 Ansible is an automation tool used for configuration management and application
                 deployment. It automates deployment tasks using playbooks.
             </p>
 
             <h2>Project Workflow</h2>
+
             <p>
-                Developer pushes code to GitHub → CircleCI triggers pipeline →
-                Dependencies are installed → Flask application is tested →
+                Developer pushes code to GitHub →
+                CircleCI triggers pipeline →
+                Dependencies are installed →
+                Flask application is tested →
                 Ansible automates deployment.
             </p>
 
             <footer>
                 DevOps Project using Flask + CircleCI + Ansible
             </footer>
+
         </div>
 
     </body>
